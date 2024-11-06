@@ -1,0 +1,125 @@
+.booking {
+  background-color: #f4f4fb;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+  padding: 50px 0 100px;
+}
+.booking .form {
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 10px 60px 0 rgba(31, 34, 120, 0.1);
+  padding: 40px 35px;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+}
+.booking .form::after {
+  position: absolute;
+  border: 3px solid var(--secondary-color);
+  border-radius: 40px;
+  height: 100%;
+  content: "";
+  width: 100%;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+@media only screen and (max-width: 991px) {
+  .booking .form {
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 30px;
+  }
+}
+.booking .form .title {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.booking .form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.booking .form-group .form-select {
+  border: 1px solid rgba(86, 90, 207, 0.3);
+  border-radius: 8px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  height: 60px;
+  padding: 15px 25px;
+}
+.booking .form .btn {
+  background-color: var(--orange-color);
+  color: #fff;
+  font-weight: 600;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  transition: 0.5s all;
+}
+.booking .form .btn:hover {
+  background-color: #f18f57;
+}
+.booking .img-booking {
+  position: relative;
+  max-width: 100%;
+}
+.booking .img-booking img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.imgs-group img {
+  position: absolute;
+}
+.imgs-group .img1 {
+  animation: left-right 2s infinite alternate;
+  bottom: 16px;
+  height: 400px;
+  right: 16px;
+}
+@keyframes left-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+.imgs-group .img2 {
+  animation: top-bottom 2s infinite alternate;
+  height: 50px;
+  top: 16px;
+  right: 30px;
+}
+.imgs-group .img3 {
+  animation: top-bottom 1.5s infinite alternate;
+  height: 50px;
+  top: 50%;
+  right: 35%;
+}
+.imgs-group .img4 {
+  animation: top-bottom 1.5s infinite alternate;
+  height: 50px;
+  bottom: 60%;
+  left: 15%;
+}
+@keyframes top-bottom {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@media only screen and (max-width: 550px) {
+  .imgs-group .img2,
+  .imgs-group .img3,
+  .imgs-group .img4 {
+    display: none;
+  }
+  .imgs-group .img1 {
+    height: 200px;
+    bottom: 15px;
+  }
+}

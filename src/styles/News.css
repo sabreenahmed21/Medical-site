@@ -1,0 +1,122 @@
+.news-section .news .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-section .news .box h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.news-section .news .box .title {
+  background-image: url(../assets/bg-orange.png);
+  background-repeat: repeat;
+  width: fit-content;
+  height: 100%;
+  padding: 5px 15px;
+  color: var(--orange-color);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+
+.news-section .news .row .box {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+}
+
+.news-section .news .row .box img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.news-section .news .row .box .info,
+.news-section .news .row .box .info .date,
+.news-section .news .row .box .info .doc {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--orange-color);
+  margin: 10px 0;
+}
+
+.news-section .news .row .box .info .date p,
+.news-section .news .row .box .info .doc h6 {
+  margin: 0;
+}
+
+.news-section .news .row .box .info .doc {
+  gap: 10px;
+}
+.news-section .news .row .box .info .date {
+  gap: 5px;
+}
+
+.news-section .news .row .box .info .doc img {
+  border-radius: 50%;
+  background-size: cover;
+  width: 30px;
+}
+
+.news-section .news .row .box .info .doc h6 {
+  font-size: 14px;
+}
+
+.news-section .news .row .box .info .date p {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.news-section .news .row .box .info .date .icon {
+  font-size: 20px;
+}
+
+.news-section .news .row .box h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.news-section .news .row .box button {
+  background-color: #fff;
+  margin-top: 10px;
+  display: flex;
+  border: 2px solid var(--secondary-color);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.news-section .news .row .box button:hover {
+  background-color: var(--secondary-color);
+}
+
+.news-section .news .row .box button .btn {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.news-section .news .row .box button .btn:hover {
+  color: #fff;
+}
+
+.news-section .news .row .box button .btn-icon-bx {
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  height: 40px;
+  width: 40px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
